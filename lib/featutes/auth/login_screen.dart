@@ -34,7 +34,6 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-
                   const Text(
                     'Login',
                     style: TextStyle(
@@ -83,6 +82,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   /// SUBMIT BUTTON
                   SizedBox(
                     width: double.infinity,
+                    height: 48,
                     child: ElevatedButton(
                       onPressed: () {
                         if (_formKey.currentState!.validate()) {
@@ -90,7 +90,13 @@ class _LoginScreenState extends State<LoginScreen> {
                           debugPrint(passwordController.text);
                         }
                       },
-                      child: const Text('Login'),
+                      child: const Text(
+                        'Login',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                   ),
                 ],
