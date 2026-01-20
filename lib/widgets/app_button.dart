@@ -32,7 +32,7 @@ class AppButton extends StatelessWidget {
             backgroundColor: color ?? Theme.of(context).primaryColor,
             foregroundColor: textColor ?? Colors.white,
             padding: const EdgeInsets.symmetric(
-              vertical: 20,
+              vertical: 14,
             ),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(0),
