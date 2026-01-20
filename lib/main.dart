@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flashcard',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.teal,
         textTheme: GoogleFonts.openSansTextTheme(),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Landing Page'),
+      home: const MyHomePage(title: 'Flashcard Login'),
     );
   }
 }

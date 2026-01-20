@@ -62,7 +62,7 @@ class AppInput extends StatelessWidget {
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(0),
-            borderSide: const BorderSide(color: Colors.teal, width: 2),
+            borderSide: const BorderSide(color: Colors.teal, width: 1),
           ),
           errorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(0),

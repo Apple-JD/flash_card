@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../widgets/app_input.dart';
+import '../../widgets/app_button.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -37,7 +38,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   const Text(
                     'Login',
                     style: TextStyle(
-                      fontSize: 26,
+                      fontSize: 28,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -80,24 +81,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   const SizedBox(height: 24),
 
                   /// SUBMIT BUTTON
-                  SizedBox(
-                    width: double.infinity,
-                    height: 48,
-                    child: ElevatedButton(
-                      onPressed: () {
-                        if (_formKey.currentState!.validate()) {
-                          debugPrint(emailController.text);
-                          debugPrint(passwordController.text);
-                        }
-                      },
-                      child: const Text(
-                        'Login',
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
+                  AppButton(
+                    label: 'Login',
+                    onPressed: () {
+                      if (_formKey.currentState!.validate()) {
+                        debugPrint(emailController.text);
+                        debugPrint(passwordController.text);
+                      }
+                    },
                   ),
                 ],
               ),
