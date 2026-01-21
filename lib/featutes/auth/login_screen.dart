@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../widgets/app_input.dart';
 import '../../widgets/app_button.dart';
+import 'package:lucide_flutter/lucide_flutter.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -49,7 +50,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   AppInput(
                     label: 'Email',
                     hint: 'example@mail.com',
-                    icon: Icons.email,
+                    icon: IconData(LucideIcons.mail.codePoint,
+                        fontFamily: LucideIcons.mail.fontFamily,
+                        fontPackage: LucideIcons.mail.fontPackage),
                     controller: emailController,
                     keyboardType: TextInputType.emailAddress,
                     autofocus: true,
@@ -67,7 +70,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   /// PASSWORD INPUT
                   AppInput(
                     label: 'Password',
-                    icon: Icons.lock,
+                    icon: IconData(LucideIcons.lock.codePoint,
+                        fontFamily: LucideIcons.lock.fontFamily,
+                        fontPackage: LucideIcons.lock.fontPackage),
                     controller: passwordController,
                     isPassword: true,
                     validator: (value) {

@@ -29,7 +29,7 @@ class AppInput extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isWeb = MediaQuery.of(context).size.width > 600;
-
+    final Color borderColor = Colors.grey.shade300;
     return Padding(
       padding: EdgeInsets.symmetric(
         vertical: 8,
@@ -49,24 +49,26 @@ class AppInput extends StatelessWidget {
           prefixIcon: icon != null ? Icon(icon) : null,
           floatingLabelBehavior: FloatingLabelBehavior.auto,
           filled: true,
-          fillColor: Colors.grey.shade100,
+          fillColor: Colors.white,
           contentPadding: const EdgeInsets.symmetric(
             horizontal: 16,
             vertical: 14,
           ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(0),
-            borderSide: BorderSide(
-              color: Colors.grey.shade50,
-            ),
+            borderSide: BorderSide(color: borderColor),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(0),
+            borderSide: BorderSide(color: borderColor),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(0),
-            borderSide: const BorderSide(color: Colors.teal, width: 1),
+            borderSide: BorderSide(color: borderColor),
           ),
           errorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(0),
-            borderSide: const BorderSide(color: Colors.teal),
+            borderSide: BorderSide(color: Colors.redAccent),
           ),
         ),
       ),

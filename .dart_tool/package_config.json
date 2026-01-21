@@ -146,6 +146,12 @@
       "languageVersion": "3.4"
     },
     {
+      "name": "lucide_flutter",
+      "rootUri": "file:///Users/srinode-mac-3/.pub-cache/hosted/pub.dev/lucide_flutter-0.562.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
       "name": "matcher",
       "rootUri": "file:///Users/srinode-mac-3/.pub-cache/hosted/pub.dev/matcher-0.12.17",
       "packageUri": "lib/",

@@ -22,7 +22,7 @@ class AppButton extends StatelessWidget {
 
     return Padding(
       padding: EdgeInsets.symmetric(
-        vertical: 20,
+        vertical: 22,
         horizontal: isWeb ? 0 : 4,
       ),
       child: SizedBox(

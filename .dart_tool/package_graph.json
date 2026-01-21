@@ -9,7 +9,8 @@
       "dependencies": [
         "cupertino_icons",
         "flutter",
-        "google_fonts"
+        "google_fonts",
+        "lucide_flutter"
       ],
       "devDependencies": [
         "flutter_lints",
@@ -55,6 +56,13 @@
       "name": "cupertino_icons",
       "version": "1.0.8",
       "dependencies": []
+    },
+    {
+      "name": "lucide_flutter",
+      "version": "0.562.0",
+      "dependencies": [
+        "flutter"
+      ]
     },
     {
       "name": "flutter",
