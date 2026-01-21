@@ -36,6 +36,12 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
+                  const Image(
+                      image: AssetImage('../assets/images/logo.png'),
+                      height: 100),
+
+                  const SizedBox(height: 48),
+
                   const Text(
                     'Login',
                     style: TextStyle(
@@ -66,6 +72,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       return null;
                     },
                   ),
+                  const SizedBox(height: 8),
 
                   /// PASSWORD INPUT
                   AppInput(
@@ -83,14 +90,12 @@ class _LoginScreenState extends State<LoginScreen> {
                     },
                   ),
 
-                  const SizedBox(height: 24),
-
                   /// SUBMIT BUTTON
                   AppButton(
                     label: 'Login',
-                    icon: IconData(LucideIcons.scanBarcode.codePoint,
-                        fontFamily: LucideIcons.scanBarcode.fontFamily,
-                        fontPackage: LucideIcons.scanBarcode.fontPackage),
+                    icon: IconData(LucideIcons.scanFace.codePoint,
+                        fontFamily: LucideIcons.scanFace.fontFamily,
+                        fontPackage: LucideIcons.scanFace.fontPackage),
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
                         debugPrint(emailController.text);

@@ -55,19 +55,19 @@ class AppInput extends StatelessWidget {
             vertical: 14,
           ),
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(0),
+            borderRadius: BorderRadius.circular(5),
             borderSide: BorderSide(color: borderColor),
           ),
           enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(0),
+            borderRadius: BorderRadius.circular(5),
             borderSide: BorderSide(color: borderColor),
           ),
           focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(0),
+            borderRadius: BorderRadius.circular(5),
             borderSide: BorderSide(color: borderColor),
           ),
           errorBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(0),
+            borderRadius: BorderRadius.circular(5),
             borderSide: BorderSide(color: Colors.red),
           ),
         ),

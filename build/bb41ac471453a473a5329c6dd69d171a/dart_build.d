@@ -1,0 +1,1 @@
+ /Users/master/Desktop/flash_card/build/bb41ac471453a473a5329c6dd69d171a/dart_build_result.json:  /Applications/development/flutter/bin/cache/dart-sdk/version /Users/master/Desktop/flash_card/.dart_tool/package_config.json /Users/master/Desktop/flash_card/pubspec.yaml

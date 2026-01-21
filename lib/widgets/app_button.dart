@@ -24,7 +24,7 @@ class AppButton extends StatelessWidget {
 
     return Padding(
       padding: EdgeInsets.symmetric(
-        vertical: 22,
+        vertical: 28,
         horizontal: isWeb ? 0 : 4,
       ),
       child: SizedBox(
@@ -34,10 +34,10 @@ class AppButton extends StatelessWidget {
             backgroundColor: color ?? Theme.of(context).primaryColor,
             foregroundColor: textColor ?? Colors.white,
             padding: const EdgeInsets.symmetric(
-              vertical: 14,
+              vertical: 20,
             ),
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(0),
+              borderRadius: BorderRadius.circular(5),
             ),
           ),
           onPressed: onPressed,
@@ -46,13 +46,12 @@ class AppButton extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(icon, size: 20),
+                    Icon(icon, size: 22),
                     const SizedBox(width: 8),
                     Text(
                       label,
                       style: const TextStyle(
                         fontSize: 18,
-                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ],
