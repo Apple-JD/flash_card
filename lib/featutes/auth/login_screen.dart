@@ -70,9 +70,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   /// PASSWORD INPUT
                   AppInput(
                     label: 'Password',
-                    icon: IconData(LucideIcons.lock.codePoint,
-                        fontFamily: LucideIcons.lock.fontFamily,
-                        fontPackage: LucideIcons.lock.fontPackage),
+                    icon: IconData(LucideIcons.lockKeyhole.codePoint,
+                        fontFamily: LucideIcons.lockKeyhole.fontFamily,
+                        fontPackage: LucideIcons.lockKeyhole.fontPackage),
                     controller: passwordController,
                     isPassword: true,
                     validator: (value) {
@@ -88,6 +88,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   /// SUBMIT BUTTON
                   AppButton(
                     label: 'Login',
+                    icon: IconData(LucideIcons.scanBarcode.codePoint,
+                        fontFamily: LucideIcons.scanBarcode.fontFamily,
+                        fontPackage: LucideIcons.scanBarcode.fontPackage),
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
                         debugPrint(emailController.text);

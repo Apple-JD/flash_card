@@ -6,6 +6,7 @@ class AppButton extends StatelessWidget {
   final Color? color;
   final Color? textColor;
   final bool isFullWidth;
+  final IconData? icon;
 
   const AppButton({
     super.key,
@@ -14,6 +15,7 @@ class AppButton extends StatelessWidget {
     this.color,
     this.textColor,
     this.isFullWidth = true,
+    this.icon,
   });
 
   @override
@@ -39,13 +41,29 @@ class AppButton extends StatelessWidget {
             ),
           ),
           onPressed: onPressed,
-          child: Text(
-            label,
-            style: const TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
+          child: icon != null
+              ? Row(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(icon, size: 20),
+                    const SizedBox(width: 8),
+                    Text(
+                      label,
+                      style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                )
+              : Text(
+                  label,
+                  style: const TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
         ),
       ),
     );
